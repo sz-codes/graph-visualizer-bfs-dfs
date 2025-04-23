@@ -1,0 +1,6 @@
+canvas {
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    display: block;
+    margin: 0 auto; /* Center the canvas */
+}
