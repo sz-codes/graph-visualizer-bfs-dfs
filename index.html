@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graph Traversal Visualizer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Graph Traversal Visualizer (BFS/DFS)</h1>
+
+    <div id="controls">
+      <button id="bfs-button">Run BFS</button>
+      <button id="dfs-button">Run DFS</button>
+      <button id="reset-button">Reset to Sample</button>
+      <hr />
+      <button id="clear-graph-button">Clear Graph</button>
+      <button id="add-node-button">Add Node</button>
+      <br />
+      <label for="edge-source">Source:</label>
+      <input
+        type="number"
+        id="edge-source"
+        name="edge-source"
+        style="width: 40px"
+      />
+      <label for="edge-target">Target:</label>
+      <input
+        type="number"
+        id="edge-target"
+        name="edge-target"
+        style="width: 40px"
+      />
+      <button id="add-edge-button">Add Edge</button>
+      <!-- Add more controls as needed (e.g., speed, remove node/edge) -->
+    </div>
+
+    <div id="graph-container">
+      <svg id="graph-svg" width="800" height="600"></svg>
+      <!-- Or use a Canvas element -->
+      <!-- <canvas id="graph-canvas" width="800" height="600"></canvas> -->
+    </div>
+
+    <div id="status-panel">
+      <h2>Status</h2>
+      <p id="status-message">Select an algorithm and click Run.</p>
+      <p id="traversal-path">Traversal Path:</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

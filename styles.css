@@ -1,0 +1,53 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#controls {
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 0 5px;
+    padding: 8px 15px;
+}
+
+#graph-container {
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+#graph-svg {
+    display: block; /* Remove extra space below SVG */
+}
+
+#status-panel {
+    width: 800px;
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+
+/* Basic node/edge styling (will be manipulated by JS) */
+.node {
+    stroke: black;
+    stroke-width: 1.5px;
+    fill: lightblue;
+}
+
+.edge {
+    stroke: #999;
+    stroke-opacity: 0.6;
+    stroke-width: 2px;
+}
+
+.visited {
+    fill: lightcoral;
+}
+
+.current {
+    fill: yellow;
+    stroke: red;
+    stroke-width: 3px;
+}
